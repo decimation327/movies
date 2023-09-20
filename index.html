@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Peliculas</title>
+</head>
+
+<body>
+
+  <nav>
+    <div class="options">
+
+      <div class="opc"></div>
+      <h1 class="titulo">Mega Pelis</h1>
+      <div class="search">
+        <input type="text" id="busqueda" placeholder="Ingresa el título" />
+      </div>  
+
+      <div class="filtros">
+      <div class="type">
+        <label for="tipo">Tipo:</label>
+        <select id="tipo">
+          <option value="Todos">Todos</option>
+          <option value="Pelicula">Película</option>
+          <option value="Serie">Serie</option>
+        </select>
+      </div>
+      <div class="generos">
+        <label for="genero">Género:</label>
+        <select id="genero">
+          <option value="Todos">Todos</option>
+          <option value="Accion">Acción</option>
+          <option value="Aventura">Aventura</option>
+          <option value="Comedia">Comedia</option>
+          <option value="Drama">Drama</option>
+          <option value="Terror">Terror</option>
+          <option value="CienciaFiccion">Ciencia ficción</option>
+          <option value="Fantasia">Fantasía</option>
+          <option value="Romance">Romance</option>
+          <option value="Animacion">Animación</option>
+          <option value="Familia">Familia</option>
+          <option value="Crimen">Crimen</option>
+          <option value="Suspenso">Suspenso</option>
+          <option value="Misterio">Misterio</option>
+          <option value="Documental">Documental</option>
+          <option value="Historico">Histórico</option>
+          <option value="Guerra">Guerra</option>
+          <option value="Musical">Musical</option>
+          <option value="Western">Western</option>
+          <option value="Deportes">Deportes</option>
+          <option value="Biografico">Biográfico</option>
+          <!-- Agrega más géneros aquí -->
+        </select>
+      </div>
+    </div>
+    </div>
+
+  </nav>
+
+
+  <div id="contenedorFiltrado">
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+   
+      <div class="right">
+        <span class="close" id="closeModal">&times;</span>
+        <h2 class="top" id="modalTitulo"></h2>
+        <div class="contain">
+        <div class="left">
+          <p id="modalTipoGenero"></p>
+          <p id="modalDescripcion"></p>
+        </div>
+        <div class="righ">
+          <img src="" alt="" id="modalImg" class="img">
+        </div>
+      </div>
+       
+        <iframe width="600" height="315" src="" id="modalVideo" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <!-- Puedes agregar más información aquí -->
+    </div>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
